@@ -1,11 +1,12 @@
-// function 
-function sing(){
+// FUNCTION WITH EXPRESSION
+
+ let sing =function (){                      // is is same as function sing (){ ..codes...}
      console.log("happy birthday.....");
 }
 sing();    // we are calling the function using same function name 
 
 
-function add(){
+let add=function (){                    // same as function add(){... codes..}
      console.log(2+4);
 }
 add();      //DRY mean don't repeat your self
@@ -13,22 +14,22 @@ add();      //DRY mean don't repeat your self
 
 // function using return
 
-function sum(){
+var sum=function (){
      return 2+4;
 }
 console.log(sum());    // the 6 us return here in the sum 
 
-// reusable function in js
+// .........................reusable function in js..............................................
 
-function reusable(num1,num2){    // two parameter is there 
+var reusable=function (num1,num2){    // two parameter is there 
      return num1+num2;
 }
 console.log((reusable(10,20)));   // two argument is passed to the parameter 
                                    // note undefine + undefine =nall
 
-// to find the even number 
+// ........................to find the even number ...............................................
 
-function is_even(input){    // this is parameter will take the argument 
+let is_even= function (input){    // this is parameter will take the argument and it is function expression with parameter
      if(input % 2 == 0){
           return true;      // or you can write return input % 2 === 0;
      }else{
@@ -41,16 +42,16 @@ console.log(is_even(4));    // argument is pass to the parameter
 
 // to return first character 
 
-function firstchar(character){
+var firstchar=function (character){
      return character[0];          // it will give first character of 
 }
 console.log(firstchar("tenzin"));  
 
 
 
-// finding the target array 
+//................................finding the target array ..........................
 
-function find_arr(a,tar){
+let find_arr=function (a,tar){
      for(let i=0; i < a.length; i++){
           if(a[i] ===tar){
                return i;
